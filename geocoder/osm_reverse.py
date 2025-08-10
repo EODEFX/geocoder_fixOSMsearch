@@ -24,6 +24,7 @@ class OsmReverse(OsmQuery):
         params = {
             'q': str(Location(location)),
             'format': 'jsonv2',
+            'email': 'my@mail.com',
             'addressdetails': 1,
             'limit': kwargs.get('limit', 1)
         }
