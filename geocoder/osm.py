@@ -331,6 +331,7 @@ class OsmQuery(MultipleResultsQuery):
         return {
             'q': location,
             'format': 'jsonv2',
+            'email': 'my@mail.com',
             'addressdetails': 1,
             'limit': kwargs.get('maxRows', 1),
         }
@@ -372,6 +373,7 @@ class OsmQueryDetail(MultipleResultsQuery):
         # build params
         query = {
             'format': 'jsonv2',
+            'email': 'my@mail.com',
             'addressdetails': 1,
             'limit': kwargs.get('maxRows', 1),
         }
